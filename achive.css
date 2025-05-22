@@ -1,0 +1,186 @@
+/* Fade-in effect for scrolling animations */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+/* Ensures elements appear when they are scrolled into view */
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Smooth Hover Effects for Carousel */
+
+.carousel-item img {
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+
+/* Image enlarges slightly on hover */
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+
+
+/* Button Hover Effects */
+
+button {
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Fade-in effect for scrolling animations */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+/* Ensures elements appear when they are scrolled into view */
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Smooth Hover Effects for Carousel */
+
+.carousel-item img {
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+
+/* Image enlarges slightly on hover */
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+
+
+/* Button Hover Effects */
+
+button {
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Next Page Button Styling */
+
+.next-page-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.next-page-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(45deg, #3bc7f2, #0fa6cc);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+/* Hover Effect */
+
+.next-page-btn:hover {
+    background: linear-gradient(45deg, #0fa6cc, #3bc7f2);
+    transform: scale(1.1);
+}
+
+
+/* Fade-in effect for scrolling animations */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+/* Ensures elements appear when they are scrolled into view */
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Smooth Hover Effects for Carousel */
+
+.carousel-item img {
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+
+/* Image enlarges slightly on hover */
+
+.carousel-item img:hover {
+    transform: scale(1.08);
+    filter: brightness(120%);
+}
+
+
+/* Button Hover Effects */
+
+button {
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.12);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Next Page Button Styling */
+
+.next-page-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.next-page-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ff7eb3, #ff4081);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+/* Hover Effect */
+
+.next-page-btn:hover {
+    background: linear-gradient(45deg, #ff4081, #ff7eb3);
+    transform: scale(1.12);
+}

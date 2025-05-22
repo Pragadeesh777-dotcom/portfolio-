@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(45deg, #0f0f0f, #1c1c1c);
+    /* Dark gradient background */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+/* Center the heading */
+
+.heading {
+    margin-bottom: 20px;
+}
+
+
+/* Center the paragraph */
+
+.paragraph {
+    width: 60%;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+/* Skills Section */
+
+.skills-container {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+
+/* Progress Bar Styling */
+
+.progress {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Animated Progress Bar */
+
+.progress-bar {
+    width: 0%;
+    background: linear-gradient(45deg, #48abd5, #15a589);
+    transition: width 1.2s ease-in-out;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 10px rgba(21, 165, 137, 0.6);
+    animation: progressGlow 2s infinite alternate;
+}
+
+@keyframes progressGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(21, 165, 137, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(21, 165, 137, 0.8);
+    }
+}
+
+
+/* Center Button Container */
+
+.button-container {
+    margin-top: 20px;
+}
+
+
+/* Resume & Navigation Buttons */
+
+.resume-button,
+.next-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Next Button Styling */
+
+.next-button {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.next-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}

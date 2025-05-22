@@ -1,0 +1,146 @@
+/* General Styling */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-size: cover;
+    padding: 2rem;
+    transition: background 0.5s ease-in-out;
+    animation: fadeInBody 1s ease-in-out;
+    background-color: #282929;
+}
+
+
+/* Animated Background */
+
+@keyframes animatedBackground {
+    0% {
+        background-position: center top;
+    }
+    100% {
+        background-position: center bottom;
+    }
+}
+
+
+/* Fade-in Animation for Body */
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Heading Styling */
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 3px 3px 15px rgba(59, 199, 242, 0.8);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInText 1s ease-out forwards;
+}
+
+
+/* Heading Fade-in Animation */
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Form Container */
+
+.form-container {
+    background: rgba(94, 209, 234, 0.7);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(203, 11, 82, 0.5);
+    max-width: 600px;
+    margin: auto;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInForm 1.5s ease-in-out forwards;
+}
+
+
+/* Form Container Fade-in Animation */
+
+@keyframes fadeInForm {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Form Inputs */
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+/* Input Hover & Focus Effect */
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 15px rgba(59, 199, 242, 0.8);
+    outline: none;
+    transform: scale(1.02);
+}
+
+
+/* Submit Button */
+
+.submit-btn {
+    background: linear-gradient(45deg, #f70e86, #dae01f);
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+/* Button Hover Effect */
+
+.submit-btn:hover {
+    background: linear-gradient(45deg, #ea5c8b, #0bebeb);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(44, 46, 47, 0.8);
+}
+
+
+/* Error Message */
+
+.error {
+    color: #ff4b4b;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,134 @@
+.about-me-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+
+/* Define gradient animation */
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    }
+    25% {
+        background: linear-gradient(45deg, #480ada, #fbc2eb);
+    }
+    50% {
+        background: linear-gradient(45deg, #6dd5ed, #2193b0);
+    }
+    75% {
+        background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    }
+    100% {
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    }
+    /* Loops */
+}
+
+body {
+    background-color: #eb0b0b;
+    /* Black background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Card styling */
+
+.card {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(to right, #ffffff, #f9f9f9);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Image animation */
+
+.card-img-left {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.card:hover .card-img-left {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* Card Body */
+
+.card-body {
+    padding: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.card:hover .card-body {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Smooth text animation */
+
+.card-text {
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover .card-text {
+    color: #000;
+    transform: translateX(6px);
+}
+
+
+/* Position the button at the bottom */
+
+.home-button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+
+/* Styling for the button */
+
+.home-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff758c, #0fc8f6);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Hover Effect */
+
+.home-button:hover {
+    background: linear-gradient(45deg, #480ada, #fb1013);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
